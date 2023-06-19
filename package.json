@@ -1,0 +1,40 @@
+{
+  "name": "github-profile-info",
+  "version": "1.0.1",
+  "type": "module",
+  "description": "React component library that simplifies the integration of GitHub user information into web applications. Display followers, repositories, and their links effortlessly, providing an intuitive interface for GitHub data exploration and utilization",
+  "main": "index.js",
+  "eslintConfig": {
+    "globals": {
+      "process": "readonly"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sosumit001/github-profile-info"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "github",
+    "react-github-components",
+    "github-react-card",
+    "github profile",
+    "react"
+  ],
+  "author": "Sumit So",
+  "license": "ISC",
+  "dependencies": {
+    "@apollo/client": "^3.7.15",
+    "graphql": "^16.6.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "peerDependencies": {
+    "@apollo/client": "^3.7.15",
+    "graphql": "^16.6.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
