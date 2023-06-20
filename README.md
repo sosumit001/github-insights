@@ -1,4 +1,4 @@
-# github-profile-info
+# github-insights-card
 
 React component library that simplifies the integration of GitHub user information into web applications. Display followers, repositories, and their links effortlessly, providing an intuitive interface for GitHub data exploration and utilization.
 
@@ -33,7 +33,7 @@ export default GitubProfile;
 
 ## Environment Variables
 
-If you would like to contribute to this project, you'll need a GitHub access token. Create an access token named `GITHUB_ACCESS_TOKEN` in your GitHub account's developer settings
+If you would like to contribute to this project, you'll need a GitHub access token. Create an access token named `GITHUB_ACCESS_TOKEN` , which you can find in GitHub developer settings
 
 ### demo Link
 
