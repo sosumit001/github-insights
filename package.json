@@ -1,6 +1,6 @@
 {
-  "name": "github-profile-info",
-  "version": "1.0.1",
+  "name": "github-insights-card",
+  "version": "1.0.3",
   "type": "module",
   "description": "React component library that simplifies the integration of GitHub user information into web applications. Display followers, repositories, and their links effortlessly, providing an intuitive interface for GitHub data exploration and utilization",
   "main": "index.js",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/sosumit001/github-profile-info"
+    "url": "https://github.com/sosumit001/github-insights"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

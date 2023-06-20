@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+
+#GithubWrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  min-width: 300px;
+  background-color: #fafafa;
+  padding: 20px;
+}
+
+.github-subs {
+  display: flex;
+  width: 100%;
+  gap: 30px;
+  font-size: 0.9rem;
+  margin: 10px auto;
+  color: #666666;
+  background-color: #f9f9f9;
+}
+
+.github-subs div {
+  padding: 10px;
+}
+
+.github-repositories {
+  height: 340px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.github-repositories::-webkit-scrollbar {
+  width: 12px;
+}
+
+.github-repositories::-webkit-scrollbar-thumb {
+  background-color: #3c3c3a;
+}
+
+.github-repo-collection {
+  display: flex;
+  gap: 18px;
+  flex-direction: column;
+}
+
+.github-repo-element {
+  position: relative;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  width: 95%;
+  margin-left: 0%;
+  color: #ffffff;
+  background-color: #010101;
+  user-select: none;
+  border: 1px solid #010101;
+  box-shadow: 1px 1px 2px 0px #d6d6d6;
+  transition: 500ms;
+  transform-origin: top;
+  overflow: hidden;
+  font-family: 'Grandiflora One', serif;
+  text-transform: uppercase;
+}
+
+.github-repo-collection div span {
+  padding-left: 30px;
+  background-color: #f5f5f5;
+  width: 100%;
+  height: 50px;
+  cursor: pointer;
+}
+
+.github-repo-collection div div {
+  width: 100%;
+  margin-left: 0px;
+}
+
+.github-repo-collection div div ul {
+  position: relative;
+  display: flex;
+  gap: 30px;
+  
+  margin-top: 10px;
+  padding-top: 10px;
+  transition: 500ms;
+  list-style-type: square;
+  font-size: 0.8rem;
+  width: 100%;
+}
+
+.github-repo-collection div div ul a {
+  position: absolute;
+  width: 20px;
+  color: white;
+  position: absolute;
+  top: 10px;
+  left: calc(100% - 80px);
+  -webkit-tap-highlight-color: rgba(240, 248, 255, 0);
+}
+
+.github-repo-collection div span a {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  color: #363436;
+  -webkit-tap-highlight-color: rgba(240, 248, 255, 0);
+}
+
+.github-pagination-btn {
+  width: 95%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: 10px;
+  padding-left: 30px;
+}
+
+.github-pagination-btn button {
+  background-color: #f9f9f9;
+  width: 80px;
+  outline: none;
+  height: 40px;
+  border: 1px solid;
+  -webkit-tap-highlight-color: rgba(240, 248, 255, 0);
+  border-radius: 0px;
+}

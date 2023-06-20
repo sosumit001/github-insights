@@ -1,0 +1,33 @@
+
+.github-profile-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid rgb(157, 157, 157);
+    color: rgb(102, 102, 102);
+    background-color: rgb(249, 249, 249);
+    box-shadow: 1px 1px 2px 0px rgb(197, 195, 195);
+}
+.github-profile-header div{
+    display: flex;
+    align-items: center;
+    gap:30px;
+    padding-left: 20px;
+    
+    font-family: 'Nunito' sans-serif;
+}
+.github-profile-header div img{
+    border-radius: 50%;
+}
+.github-profile-header a{
+    margin-right: 20px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.github-profile-header a img{
+    width: 70%;
+}
