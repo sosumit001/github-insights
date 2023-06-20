@@ -1,7 +1,10 @@
 {
-  "name": "github-insights-card",
+  "name": "@sosumit001/github-insights-card",
   "version": "1.0.3",
   "type": "module",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "description": "React component library that simplifies the integration of GitHub user information into web applications. Display followers, repositories, and their links effortlessly, providing an intuitive interface for GitHub data exploration and utilization",
   "main": "index.js",
   "eslintConfig": {
