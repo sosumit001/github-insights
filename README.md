@@ -1,4 +1,4 @@
-# github-profile-info
+# github-insights-card
 
 React component library that simplifies the integration of GitHub user information into web applications. Display followers, repositories, and their links effortlessly, providing an intuitive interface for GitHub data exploration and utilization.
 
