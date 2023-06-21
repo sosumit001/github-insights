@@ -39,10 +39,11 @@ const GihubProfile = () => {
 export default GitubProfile;
 ```
 
+
 ## customize on web
 ### demo Link
 [[demo on web]](https://profile-insight.vercel.app/)
-![Uploading github-insight.png…]()
+![github-insight](https://github.com/sosumit001/github-insights/assets/103176491/25118727-4cc2-4ef4-92fd-cb426e4aaed6)
 
 ## Environment Variables
 
