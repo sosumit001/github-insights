@@ -1,6 +1,6 @@
 {
   "name": "@sosumit001/github-insights-card",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "type": "module",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
@@ -30,6 +30,7 @@
   "license": "ISC",
   "dependencies": {
     "@apollo/client": "^3.7.15",
+    "@sosumit001/github-insights-card": "^1.0.3",
     "graphql": "^16.6.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"

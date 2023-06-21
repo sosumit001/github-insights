@@ -4,6 +4,7 @@ declare module 'github-insights-card' {
     interface GithubProfileCardProps {
       username: string;
       width: string;
+      theme: string;
     }
   
     const GithubProfileCard: React.FC<GithubProfileCardProps>;

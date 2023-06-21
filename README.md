@@ -12,6 +12,12 @@ npm install github-insights-card
 
 ## quick example
 
+| props    | value                                                                                   |
+| -------- | --------------------------------------------------------------------------------------- |
+| theme    | "Default", "DarkKnight", "EmeraldGreen", "PastelDreams", "SereneMeadow", "GolderBreeze" |
+| width    | min "290px" default                                                                     |
+| username | add github username                                                                     |
+
 Here's an example of how to use the `GithubProfileCard` component in your React application:
 
 ```jsx
@@ -22,6 +28,7 @@ const GihubProfile = () => {
     <div>
       <GithubProfileCard
         username="GithutUserName"
+        theme="default"
         width="380px" // (default value is 290px)
       />
     </div>

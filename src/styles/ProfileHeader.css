@@ -4,7 +4,6 @@
     align-items: center;
     justify-content: space-between;
     border: 1px solid rgb(157, 157, 157);
-    color: rgb(102, 102, 102);
     background-color: rgb(249, 249, 249);
     box-shadow: 1px 1px 2px 0px rgb(197, 195, 195);
 }
@@ -18,6 +17,9 @@
 }
 .github-profile-header div img{
     border-radius: 50%;
+    border: 1px solid;
+    border-bottom: 2px solid;
+    border-right: 2px solid;
 }
 .github-profile-header a{
     margin-right: 20px;
@@ -31,3 +33,11 @@
 .github-profile-header a img{
     width: 70%;
 }
+
+/* gihub-header-theme */
+.Default-header{ color:black;background-color: rgb(245, 245, 245); }
+.GolderBreeze-header{ color:black;background-color: #FFD700;}
+.DarkKnight-header{ color:rgb(91, 91, 91);background-color:#e0e0e0; }
+.EmeraldGreen-header{ color:black;background-color:#FFFFF0;}
+.PastelDreams-header {color: black; background-color: #f8daf6;}
+.SereneMeadow-header {color:black; background-color:#f0ffff;}

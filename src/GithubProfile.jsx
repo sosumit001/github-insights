@@ -8,7 +8,8 @@ import ProfileHeader from "./components/Profile"
 // link svg
 import link_right_up from './assets/link-right-up.svg'
 
-const GithubProfileCard = ({username,width}) => {
+
+const GithubProfileCard = ({username,width,theme}) => {
   const [loading, setLoading] = useState(true)
   const [data, setData] = useState(null)
   const [error, setError] = useState(null)
@@ -92,12 +93,12 @@ const GithubProfileCard = ({username,width}) => {
 
   return (
     <div 
-    id="GithubWrapper"
+    className={"GithubWrapper " + theme +"-bg"}
     style={{
       width:width?width:'300px'
     }}
     >
-      <ProfileHeader avatarUrl={data.avatarUrl} name={data.name} link={data.url} />
+      <ProfileHeader theme = {theme} avatarUrl={data.avatarUrl} name={data.name} link={data.url} />
 
       <div className="github-subs">
         <div>FOLLOWERS {data.followers.totalCount}</div>
@@ -116,8 +117,9 @@ const GithubProfileCard = ({username,width}) => {
                   height:'50px'
                 }
               }
-               className="github-repo-element" key={repo.name}>
+               className={"github-repo-element " + theme + "-header"} key={repo.name}>
                 <span
+                className={theme + "-repo"}
                 onClick={()=>{handleRepoClick(index)}}
                 >
                   <a>{loading?'...':repo.name}</a>
@@ -158,6 +160,7 @@ const GithubProfileCard = ({username,width}) => {
 
       <div className="github-pagination-btn">
         <button
+          className={theme+'-repo'}
           onClick={handlePrevRepos}
           disabled={!repositories.pageInfo.hasPreviousPage || loading}
         >
