@@ -50,5 +50,7 @@ export default GitubProfile;
 If you would like to contribute to this project, you'll need a GitHub access token. Create an access token named `GITHUB_ACCESS_TOKEN` , which you can find in GitHub developer settings
 
 ### demo Link
+for testing purpose follow this repo, this is react website where you can create features for the library
+[[Test Lib on me 😀]](https://github.com/sosumit001/profile-insights.git/)
 
 [[demo on web]](https://profile-insight.vercel.app/)
