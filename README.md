@@ -43,7 +43,7 @@ export default GitubProfile;
 ## customize on web
 ### demo Link
 [[demo on web]](https://profile-insight.vercel.app/)
-![github-insight](https://github.com/sosumit001/github-insights/assets/103176491/25118727-4cc2-4ef4-92fd-cb426e4aaed6)
+![React Componet to display github info](https://github.com/sosumit001/github-insights/assets/103176491/91575a43-bf3b-4ff4-ba9c-3830a9b7a387)
 
 ## Environment Variables
 
