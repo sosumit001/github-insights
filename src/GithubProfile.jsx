@@ -1,6 +1,7 @@
 import React from "react"
 import { useEffect, useState } from "react"
-import client from "../client"
+import { ApolloClient,createHttpLink,InMemoryCache } from "@apollo/client";
+import {setContext} from "@apollo/client/link/context"
 import { GET_USER_INFO } from "./query/userprofile"
 import "./styles/GithubProfile.css"
 import ProfileHeader from "./components/Profile"
@@ -9,7 +10,9 @@ import ProfileHeader from "./components/Profile"
 import link_right_up from './assets/link-right-up.svg'
 
 
-const GithubProfileCard = ({username,width,theme}) => {
+const GithubProfileCard = ({username,width,theme,GITHUB_ACCESS_TOKEN}) => {
+
+
   const [loading, setLoading] = useState(true)
   const [data, setData] = useState(null)
   const [error, setError] = useState(null)
@@ -22,6 +25,22 @@ const GithubProfileCard = ({username,width,theme}) => {
   const [clickedRepoIndex,setClickedRepoIndex] = useState(false)
 
   useEffect(() => {
+    const httpLink = createHttpLink({
+      uri:'https://api.github.com/graphql'
+  })
+  const authLink = setContext((_,{headers})=> {
+      return {
+          headers: {
+              ...headers,
+              authorization:`Bearer ${GITHUB_ACCESS_TOKEN}`
+          }
+      }
+  })
+  const client = new ApolloClient({
+      link:authLink.concat(httpLink),
+      cache: new InMemoryCache()
+  })
+  
     const fetchData = async () => {
       try {
         setLoading(true) // Set loading to true before fetching data
